@@ -9,7 +9,6 @@ const Footer = () => {
       py="3rem"
       borderTop="4px solid"
       borderColor="teal.700"
-      mt="5rem"
     >
       <SimpleGrid columns={4} spacing={10}>
         {/* About */}
@@ -59,7 +58,7 @@ const Footer = () => {
         <HStack spacing={4}>
           <Link href="#" fontSize="sm">Twitter</Link>
           <Link href="#" fontSize="sm">LinkedIn</Link>
-          <Link href="#" fontSize="sm">GitHub</Link>
+          <Link href="#" fontSize="sm">Instagram</Link>
         </HStack>
       </HStack>
     </Box>
