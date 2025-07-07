@@ -32,7 +32,7 @@ const Hero = () => {
       {/* Hero section */}
       <Flex
         minH="calc(100vh - 10rem)"
-        px="6rem"
+        px={{base: "2rem", md: "6rem"}}
         align="center"
         justify="space-between"
         bg={bgHero}
@@ -42,23 +42,23 @@ const Hero = () => {
         boxShadow="sm"
       >
         {/* Left Text Section */}
-        <Flex direction="column" w="40rem" align="flex-start" textAlign="left">
-          <Text fontSize="5xl" fontWeight="bold" color={textMain} lineHeight="1.2">
+        <Flex direction="column" w="40rem" align={{base: "center", md: "flex-start"}} textAlign={{base: "center", md: "left"}}>
+          <Text fontSize={{ base: "3xl", md: "5xl"}} fontWeight="bold" color={textMain} lineHeight="1.2">
             Learn Game Development from Scratch
           </Text>
 
-          <Text fontSize="lg" mt="1.2rem" mb="0.7rem" color={textSub}>
+          <Text fontSize={{ base: "md", md: "lg"}} mt="1.2rem" mb="0.7rem" color={textSub}>
             Master Unity, Unreal, and more — with structured lessons, real projects, and expert mentors.
           </Text>
 
-          <Text fontSize="md" color={textMuted} mb="2rem">
+          <Text fontSize={{ base: "sm", md: "md"}} color={textMuted} mb="2rem">
             Join 10,000+ aspiring and expert game developers learning together.
           </Text>
 
           <Button
             bg={btnBg}
             color="white"
-            size="lg"
+            size={{ base: "md", md: "lg" }}
             px="2rem"
             py="1.5rem"
             fontWeight="medium"
@@ -74,7 +74,7 @@ const Hero = () => {
         <Box
           position="relative"
           w="40rem"
-          display="flex"
+          display={{ base: "none", md: "block" }}
           justifyContent="center"
           alignItems="center"
         >
@@ -103,7 +103,7 @@ const Hero = () => {
       </Flex>
 
       {/* Marquee section */}
-      <Box h="5.95rem" bg={marqueeBg} overflow="hidden" display="flex" alignItems="center">
+      <Box h={{ base: "3rem", md: "5.95rem" }} bg={marqueeBg} overflow="hidden" display="flex" alignItems="center">
         <Marquee gradient={false} speed={50}>
           {[
             "Unity",
@@ -118,7 +118,7 @@ const Hero = () => {
           ].map((tech, i) => (
             <Text
               key={i}
-              fontSize="3xl"
+              fontSize={{ base: "xl", md: "3xl" }}
               color="white"
               mx="4rem"
               fontWeight="bold"
@@ -132,13 +132,13 @@ const Hero = () => {
 
       {/* Logo section */}
       <Box bg={logoSectionBg} p="4rem 2rem 0 2rem">
-        <Text fontSize="2.1rem" fontWeight="bold" color={textMain} mb="2rem" align="center">
+        <Text fontSize={{ base: "1.5rem", md: "2.1rem" }} fontWeight="bold" color={textMain} mb="2rem" align="center">
           Trusted by professionals and learners from organizations such as
         </Text>
         <Flex gap="4rem" align="center" justify="space-evenly" wrap="wrap">
           {[GodotLogo, PlaystationLogo, RockStarLogo, UnityLogo, UnrealELogo, RiotLogo, EpicGamesLogo].map(
             (logo, i) => (
-              <Box h="5rem" w="5rem" key={i}>
+              <Box h={{base: "3rem", md: "5rem" }} w={{base: "3rem", md: "5rem" }} key={i}>
                 <Image src={logo} alt={`Logo ${i}`} />
               </Box>
             )

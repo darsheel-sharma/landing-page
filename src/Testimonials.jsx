@@ -26,11 +26,11 @@ const Testimonials = () => {
 
   return (
     <Box bg={bgColor} py="5rem" px="4rem">
-      <Heading textAlign="center" mb="7rem" fontSize="5xl" color={textMain}>
+      <Heading textAlign="center" mb="7rem" fontSize={{ base: "2xl", md: "5xl"}} color={textMain}>
         Success Stories From Our Community
       </Heading>
 
-      <SimpleGrid columns={3} spacing="4rem">
+      <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} spacing="4rem">
         {/* Eric Barone */}
         <MotionBox
           bg={cardBg}

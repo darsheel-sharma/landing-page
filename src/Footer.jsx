@@ -1,16 +1,25 @@
-import { Box, SimpleGrid, VStack, Text, Link, HStack, Divider } from "@chakra-ui/react";
+import {
+  Box,
+  SimpleGrid,
+  VStack,
+  Text,
+  Link,
+  HStack,
+  Divider,
+  useBreakpointValue,
+} from "@chakra-ui/react";
 
 const Footer = () => {
   return (
     <Box
       bg="teal.900"
       color="teal.50"
-      px="4rem"
-      py="3rem"
+      px={{ base: "1.5rem", md: "3rem", lg: "4rem" }}
+      py={{ base: "3rem", md: "4rem" }}
       borderTop="4px solid"
       borderColor="teal.700"
     >
-      <SimpleGrid columns={4} spacing={10}>
+      <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing="2rem">
         {/* About */}
         <VStack align="start" spacing={2}>
           <Text fontWeight="bold" fontSize="lg">About</Text>
@@ -53,9 +62,15 @@ const Footer = () => {
 
       <Divider my="2rem" borderColor="teal.600" />
 
-      <HStack justify="space-between" flexWrap="wrap">
-        <Text fontSize="sm">© {new Date().getFullYear()} DevAcademy. All rights reserved.</Text>
-        <HStack spacing={4}>
+      <HStack
+        justify="space-between"
+        flexWrap="wrap"
+        spacing={{ base: 4, md: 8 }}
+      >
+        <Text fontSize="sm" mb={{ base: 2, md: 0 }}>
+          © {new Date().getFullYear()} DevAcademy. All rights reserved.
+        </Text>
+        <HStack spacing={4} flexWrap="wrap">
           <Link href="#" fontSize="sm">Twitter</Link>
           <Link href="#" fontSize="sm">LinkedIn</Link>
           <Link href="#" fontSize="sm">Instagram</Link>
