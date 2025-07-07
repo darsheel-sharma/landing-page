@@ -120,7 +120,7 @@ const Navbar = () => {
 
           <Button
             size="md"
-            variant="outline"
+            variant={{ base: "solid", md: "outline" }}
             borderColor="teal.500"
             color="teal.600"
             fontWeight="medium"
