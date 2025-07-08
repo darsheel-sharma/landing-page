@@ -6,7 +6,6 @@ import {
   Link,
   HStack,
   Divider,
-  useBreakpointValue,
 } from "@chakra-ui/react";
 
 const Footer = () => {
@@ -68,7 +67,7 @@ const Footer = () => {
         spacing={{ base: 4, md: 8 }}
       >
         <Text fontSize="sm" mb={{ base: 2, md: 0 }}>
-          © {new Date().getFullYear()} DevAcademy. All rights reserved.
+          © 2025-2026 DevAcademy. All rights reserved.
         </Text>
         <HStack spacing={4} flexWrap="wrap">
           <Link href="#" fontSize="sm">Twitter</Link>

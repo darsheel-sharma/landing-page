@@ -146,3 +146,4 @@ const PricingTab = () => {
 };
 
 export default PricingTab;
+     

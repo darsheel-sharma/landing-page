@@ -36,10 +36,10 @@ const Features = () => {
           />
         </Box>
         <Box flex="2">
-          <Heading fontSize={{base: "1rem", md: "2.5rem" }} color={textMain} mb="1rem">
+          <Heading fontSize={{base: "1.5rem", md: "2.5rem" }} color={textMain} mb="1rem">
             Self-Paced Learning Experience
           </Heading>
-          <Text fontSize={{base: "0.7rem", md: "1.25rem" }} color={textSub} lineHeight="2">
+          <Text fontSize={{base: "1rem", md: "1.25rem" }} color={textSub} lineHeight={{ base: "1.5", md: "2" }}>
             Master game development with a self-paced, gamified platform that keeps learning fun and focused. 
             Follow our Master Pathway or explore freely. Build real projects, gain multiple skills, and level up through interactive challenges — all at your own pace.
           </Text>
@@ -59,10 +59,10 @@ const Features = () => {
           />
         </Box>
         <Box flex="2">
-          <Heading fontSize={{base: "1rem", md: "2.5rem" }} color={textMain} mb="1rem">
+          <Heading fontSize={{base: "1.5rem", md: "2.5rem" }} color={textMain} mb="1rem">
             Mentorship & Career Growth
           </Heading>
-          <Text fontSize={{base: "0.7rem", md: "1.25rem" }} color={textSub} lineHeight="2">
+          <Text fontSize={{base: "1rem", md: "1.25rem" }} color={textSub} lineHeight={{ base: "1.5", md: "2" }}>
             Get personalized guidance from industry experts with 1-on-1 mentorship and portfolio reviews. 
             Prepare for game industry roles with resume tips, interview support, and deep feedback on your game mechanics, design, and storytelling.
           </Text>
@@ -82,10 +82,10 @@ const Features = () => {
           />
         </Box>
         <Box flex="2">
-          <Heading fontSize={{base: "1rem", md: "2.5rem" }} color={textMain} mb="1rem">
+          <Heading fontSize={{base: "1.5rem", md: "2.5rem" }} color={textMain} mb="1rem">
             Community & Collaboration
           </Heading>
-          <Text fontSize={{base: "0.7rem", md: "1.25rem" }} color={textSub} lineHeight="2">
+          <Text fontSize={{base: "1rem", md: "1.25rem" }} color={textSub} lineHeight={{ base: "1.5", md: "2" }}>
             Join a vibrant network of developers, artists, and creators. Collaborate on group projects, exchange peer feedback, 
             and engage in game jams, challenges, and showcases that keep you motivated and inspired.
           </Text>
@@ -105,10 +105,10 @@ const Features = () => {
           />
         </Box>
         <Box flex="2">
-          <Heading fontSize={{base: "1rem", md: "2.5rem" }} color={textMain} mb="1rem">
+          <Heading fontSize={{base: "1.5rem", md: "2.5rem" }} color={textMain} mb="1rem">
             Beyond Development
           </Heading>
-          <Text fontSize={{base: "0.7rem", md: "1.25rem" }} color={textSub} lineHeight="2">
+          <Text fontSize={{base: "1rem", md: "1.25rem" }} color={textSub} lineHeight={{ base: "1.5", md: "2" }}>
             Go beyond coding and learn how to publish and monetize your games. 
             From launching on Steam or mobile stores to leveraging assets and analytics tools — we help you turn games into real-world opportunities.
           </Text>

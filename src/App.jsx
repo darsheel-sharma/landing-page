@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 import Hero from './Hero';
 import Features from'./Features';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Testimonials from './Testimonials';
 import PricingTab from './PricingTab';
 import Footer from './Footer';

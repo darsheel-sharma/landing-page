@@ -52,7 +52,7 @@ const Navbar = () => {
         animate={{ y: 0 }}
         transition={{ duration: 1.5, type: "spring", stiffness: 100 }}
       >
-        {/* Left: Logo */}
+        {/*Logo */}
         <Flex align="center" gap={2}>
           <Icon as={FaGamepad} boxSize={7} color="teal.500" />
           <Heading fontSize="xl" color={textColor}>
@@ -60,7 +60,7 @@ const Navbar = () => {
           </Heading>
         </Flex>
 
-        {/* Desktop Center + Right */}
+        {/* explore + searchbar */}
         <HStack
           spacing={4}
           display={{ base: "none", md: "flex" }}
@@ -100,6 +100,8 @@ const Navbar = () => {
           </Box>
         </HStack>
 
+        {/* mentor + auth options + dark mode toggle */}
+
         <HStack spacing={4} display={{ base: "none", md: "flex" }}>
           <Text
             fontWeight="medium"
@@ -120,7 +122,7 @@ const Navbar = () => {
 
           <Button
             size="md"
-            variant={{ base: "solid", md: "outline" }}
+            variant="outline"
             borderColor="teal.500"
             color="teal.600"
             fontWeight="medium"
@@ -150,7 +152,7 @@ const Navbar = () => {
           />
         </HStack>
 
-        {/* Mobile Hamburger */}
+        {/* Hamburger */}
         <IconButton
           display={{ base: "flex", md: "none" }}
           icon={<FaBars />}
@@ -161,7 +163,7 @@ const Navbar = () => {
         />
       </MotionFlex>
 
-      {/* Drawer for mobile menu */}
+      {/* sidebar */}
       <Drawer placement="right" onClose={onClose} isOpen={isOpen}>
         <DrawerOverlay />
         <DrawerContent bg={bgColor}>

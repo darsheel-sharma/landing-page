@@ -31,7 +31,7 @@ const Hero = () => {
     <>
       {/* Hero section */}
       <Flex
-        minH="calc(100vh - 10rem)"
+        minH={{ base: "57vh", md: "calc(100vh - 10rem)" }}
         px={{base: "2rem", md: "6rem"}}
         align="center"
         justify="space-between"
@@ -41,7 +41,7 @@ const Hero = () => {
         overflow="hidden"
         boxShadow="sm"
       >
-        {/* Left Text Section */}
+        {/* Left section */}
         <Flex direction="column" w="40rem" align={{base: "center", md: "flex-start"}} textAlign={{base: "center", md: "left"}}>
           <Text fontSize={{ base: "3xl", md: "5xl"}} fontWeight="bold" color={textMain} lineHeight="1.2">
             Learn Game Development from Scratch
@@ -70,7 +70,7 @@ const Hero = () => {
           </Button>
         </Flex>
 
-        {/* Right Animation Section with SVG Blob */}
+        {/* Right section */}
         <Box
           position="relative"
           w="40rem"
@@ -136,13 +136,27 @@ const Hero = () => {
           Trusted by professionals and learners from organizations such as
         </Text>
         <Flex gap="4rem" align="center" justify="space-evenly" wrap="wrap">
-          {[GodotLogo, PlaystationLogo, RockStarLogo, UnityLogo, UnrealELogo, RiotLogo, EpicGamesLogo].map(
-            (logo, i) => (
-              <Box h={{base: "3rem", md: "5rem" }} w={{base: "3rem", md: "5rem" }} key={i}>
-                <Image src={logo} alt={`Logo ${i}`} />
-              </Box>
-            )
-          )}
+          <Box h={{ base: "3rem", md: "5rem" }} w={{ base: "3rem", md: "5rem" }}>
+            <Image src={GodotLogo} />
+          </Box>
+          <Box h={{ base: "3rem", md: "5rem" }} w={{ base: "3rem", md: "5rem" }}>
+            <Image src={PlaystationLogo} />
+          </Box>
+          <Box h={{ base: "3rem", md: "5rem" }} w={{ base: "3rem", md: "5rem" }}>
+            <Image src={RockStarLogo} alt="RockStar Logo" />
+          </Box>
+          <Box h={{ base: "3rem", md: "5rem" }} w={{ base: "3rem", md: "5rem" }}>
+            <Image src={UnityLogo} />
+          </Box>
+          <Box h={{ base: "3rem", md: "5rem" }} w={{ base: "3rem", md: "5rem" }}>
+            <Image src={UnrealELogo} />
+          </Box>
+          <Box h={{ base: "3rem", md: "5rem" }} w={{ base: "3rem", md: "5rem" }}>
+            <Image src={RiotLogo} />
+          </Box>
+          <Box h={{ base: "3rem", md: "5rem" }} w={{ base: "3rem", md: "5rem" }}>
+            <Image src={EpicGamesLogo} />
+          </Box>
         </Flex>
         <Spacer h="4rem" />
       </Box>
