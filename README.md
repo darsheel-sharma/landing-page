@@ -1,12 +1,28 @@
-# React + Vite
+# Modern React Landing Page with Chakra UI & Framer Motion
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Chakra UI](https://img.shields.io/badge/Chakra%20UI-319795?style=for-the-badge&logo=chakraui&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-Currently, two official plugins are available:
+This project is a modern, fully responsive landing page built with React. It was created to showcase advanced frontend development skills, including component-based architecture, modern styling with **Chakra UI**, and smooth animations powered by **Framer Motion**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**[➡️ View Live Demo](https://landing-page-hazel-seven-31.vercel.app/)**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Features
+
+* **Component-Based Architecture:** The UI is built with reusable and maintainable React components, following best practices.
+* **Fully Responsive Design:** Leveraging Chakra UI's responsive style props, the layout adapts perfectly to all screen sizes.
+* **Fluid Animations:** Utilizes **Framer Motion** to create engaging user interactions, and scroll-based animations.
+* **Modern UI/UX:** Built with the accessible and composable components of **Chakra UI** for a clean and professional user experience.
+
+---
+
+## 🛠️ Tech Stack
+
+* **Core Library:** React
+* **Component Library & Styling:** Chakra UI
+* **Animation:** Framer Motion
+* **State Management:** React Hooks (`useState`, `useEffect`)
+* **Build Tool:** Vite*(<-- choose what you used)*
