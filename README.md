@@ -25,4 +25,4 @@ This project is a modern, fully responsive landing page built with React using j
 * **Component Library & Styling:** Chakra UI
 * **Animation:** Framer Motion
 * **State Management:** React Hooks (`useState`, `useEffect`)
-* **Build Tool:** Vite**
+* **Build Tool:** Vite
