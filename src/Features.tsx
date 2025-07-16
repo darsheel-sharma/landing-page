@@ -5,7 +5,7 @@ import Mentor from "./assets/mentor.svg";
 import Team from "./assets/team.svg";
 import Beyond from "./assets/beyond.svg";
 
-const Features = () => {
+const Features: React.FC = () => {
 
   const bgColor = useColorModeValue("teal.50", "gray.800");
   const textMain = useColorModeValue("teal.800", "teal.100");

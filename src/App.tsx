@@ -6,9 +6,9 @@ import Testimonials from './Testimonials';
 import PricingTab from './PricingTab';
 import Footer from './Footer';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <Router>  
+    <Router>
       <div className="App">
         <Navbar />
         <div className="content">

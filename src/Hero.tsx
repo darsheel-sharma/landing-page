@@ -17,7 +17,7 @@ import UnrealELogo from "./assets/unrealE.svg";
 import RiotLogo from "./assets/riot.svg";
 import EpicGamesLogo from "./assets/epicgames.svg";
 
-const Hero = () => {
+const Hero: React.FC = () => {
   const bgHero = useColorModeValue("teal.50", "gray.800");
   const textMain = useColorModeValue("teal.800", "teal.100");
   const textSub = useColorModeValue("teal.700", "teal.200");
@@ -82,7 +82,7 @@ const Hero = () => {
             position="absolute"
             top="55%"
             left="50%"
-            transform="translate(-50%, -50%)"
+            transform="translate(-58%, -50%)"
             w="50rem"
             h="45rem"
             zIndex={0}

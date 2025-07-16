@@ -8,7 +8,7 @@ import {
   Divider,
 } from "@chakra-ui/react";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <Box
       bg="teal.900"

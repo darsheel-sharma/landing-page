@@ -25,7 +25,7 @@ import { motion } from "framer-motion";
 
 const MotionFlex = motion(Flex);
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
 

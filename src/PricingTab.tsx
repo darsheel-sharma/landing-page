@@ -8,7 +8,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 
-const PricingTab = () => {
+const PricingTab: React.FC = () => {
   const bgColor = useColorModeValue("teal.50", "gray.800");
   const textMain = useColorModeValue("teal.800", "teal.100");
   const cardBg = useColorModeValue("white", "gray.700");

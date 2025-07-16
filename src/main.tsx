@@ -6,7 +6,13 @@ import App from './App'
 import theme from "./theme";
 
 const rootElement = document.getElementById('root')
-ReactDOM.createRoot(rootElement).render(
+
+if (!rootElement) {
+  throw new Error("Failed to find the root element")
+}
+
+
+ReactDOM.createRoot(rootElement as HTMLElement ).render(
   <React.StrictMode>
     <ChakraProvider theme={theme}>
       <ColorModeScript initialColorMode={theme.config.initialColorMode} />
