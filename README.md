@@ -4,7 +4,7 @@
 ![Chakra UI](https://img.shields.io/badge/Chakra%20UI-319795?style=for-the-badge&logo=chakraui&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-This project is a modern, fully responsive landing page built with React. It was created to showcase advanced frontend development skills, including component-based architecture, modern styling with **Chakra UI**, and smooth animations powered by **Framer Motion**.
+This project is a modern, fully responsive landing page built with React using javascript and later migrated to typescript. It was created to showcase advanced frontend development skills, including component-based architecture, modern styling with **Chakra UI**, and smooth animations powered by **Framer Motion**.
 
 **[➡️ View Live Demo](https://landing-page-hazel-seven-31.vercel.app/)**
 
@@ -25,4 +25,4 @@ This project is a modern, fully responsive landing page built with React. It was
 * **Component Library & Styling:** Chakra UI
 * **Animation:** Framer Motion
 * **State Management:** React Hooks (`useState`, `useEffect`)
-* **Build Tool:** Vite*(<-- choose what you used)*
+* **Build Tool:** Vite**
